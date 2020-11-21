@@ -1,0 +1,19 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/mixins";
+@import "../../abstracts/functions";
+
+.headline {
+  text-align: center;
+  color: $main-dark-grey;
+  @include bold-headlines-font;
+  &_small {
+    font-size: rem(21px);
+  }
+  &_upper {
+    font-size: rem(44px);
+    text-transform: uppercase;
+    letter-spacing: 1.30px;
+    margin: 80px 0 86px;
+  }
+  
+}

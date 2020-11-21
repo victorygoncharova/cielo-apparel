@@ -1,0 +1,21 @@
+@import "./variables";
+
+@mixin bold-headlines-font {
+  font-family: $headlines-font;
+  font-weight: 700;
+}
+
+@mixin normal-headlines-font {
+  font-family: $headlines-font;
+  font-weight: 400;
+}
+
+@mixin normal-text-font {
+  font-family: $text-font;
+  font-weight: 400;
+}
+
+@mixin bold-text-font {
+  font-family: $text-font;
+  font-weight: 700;
+}

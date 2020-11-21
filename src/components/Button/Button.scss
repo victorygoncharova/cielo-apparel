@@ -1,0 +1,17 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/mixins";
+
+.btn {
+  padding: 10px 30px;
+  border: 1px solid $main-dark-grey;
+  text-align: center;
+  background: transparent;
+  color: $main-dark-grey;
+  text-decoration: none;
+  font-size: rem(16px);
+  transition: all 0.4s ease 0s;
+  &:hover {
+    background-color: $main-dark-grey;
+    color: #fff;
+  }
+}

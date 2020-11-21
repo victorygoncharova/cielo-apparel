@@ -1,0 +1,14 @@
+.footer {
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  &__content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  &__column {
+    width: 476px;
+    text-align: center;
+  }
+}

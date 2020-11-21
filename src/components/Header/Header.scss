@@ -1,0 +1,94 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/mixins";
+
+.header {
+  width: 100%;
+  height: $header-height;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: #fff;
+  &__body {
+    padding: 0 4%;
+    height: 68%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__nav {
+    margin: 0 60px 0 auto;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__link {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: rem(14px);
+    line-height: 50px;
+    color: $main-dark-grey;
+    @include normal-text-font;
+  }
+  &__item {
+    margin-left: 64px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__login {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    font-size: rem(16px);
+    line-height: 22px;
+    color: $main-dark-grey;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  &__link {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.avatar {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.icon {
+  width: 42px;
+  height: 17px;
+  margin-left: 30px;
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}

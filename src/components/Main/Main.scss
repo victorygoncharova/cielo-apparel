@@ -1,0 +1,16 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/mixins";
+
+
+.main {
+  width: 100%;
+  margin-top: $header-height;
+  flex: 1 1 auto;
+}
+
+.new-arrival {
+  width: 100%;
+  padding: 0 2%;
+  
+}
+
