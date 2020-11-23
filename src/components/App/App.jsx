@@ -21,27 +21,22 @@ constructor() {
   this.state = {
     productData: productData,
   }
+
   this.clickFilter = (text) => {
 
     const newData = productData.filter(item => item.filters.collection.includes(text));
-    console.log(newData);
-
-    this.setState((productData) => {
+    this.setState(({productData}) => {
       return {
         productData: newData
       };
-    })
-    
+    })  
   }
 
 }
 
 
-
 render() {
-
   const { productData } = this.state;
-
   return (
 
     <Router>

@@ -9,12 +9,18 @@ class Accordion extends Component {
             activeFilter: 'All',
             
         };
+
         this.activeFilter = (e) => {
-            this.setState({
+            this.setState( {
                 activeFilter: e.target.dataset.filter,
             })
         }
     };
+
+    clickHandler = (text, e) => {
+        this.activeFilter(e);
+        this.props.clickFilter(text);
+    }
 
 render() {
 
@@ -30,11 +36,12 @@ render() {
                 <ul className="filter__list">
                 {
 
-                    items.map((item, index) => (
-                        
-                        <li key={item.index} data-index={index} data-filter={item.text} onClick={() => clickFilter(item.text)}> {item.text} </li>
-                    ))
-                        
+                    items.map((item, index) => {
+                        const text = item.text;
+                        return (
+                            <li key={item.index} className={item.text === activeFilter ? 'filter__item active' : 'filter__item'} data-index={index} data-filter={item.text} onClick = {this.clickHandler.bind(this, text)}> {item.text} </li>
+                        )
+                    })  
                 }
  
                 </ul> 
@@ -51,6 +58,10 @@ render() {
 }
 
 export default Accordion;
+
+
+
+
 
 
 /* class Accordion extends Component {
