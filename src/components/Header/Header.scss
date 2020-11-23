@@ -71,6 +71,11 @@
     width: 100%;
     height: 100%;
   }
+  &__text {
+    text-decoration: none;
+    color: $main-dark-grey;
+    font-size: rem(18px);
+  }
 }
 
 .avatar {

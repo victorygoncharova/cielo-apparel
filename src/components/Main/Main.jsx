@@ -18,9 +18,6 @@ export default class Main extends Component {
           <HeadlineUpperCase text="Latest Arrivals" />
           <CreateLatestArrivals data={productData} />
         </section>
-        
-
-        {/* <ProductList data={productData} /> */}
         <HeadlineUpperCase text="Follow us on Instagram" />
       </main>
     );

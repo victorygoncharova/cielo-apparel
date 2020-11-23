@@ -19,6 +19,7 @@
 .products {
     display: flex;
     margin: 0 -10px;
+    flex-wrap: wrap;
   }
   
   .product {

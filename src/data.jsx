@@ -56,7 +56,7 @@ const productData = [
     },
 
     filters: {
-      collection: ["Sport Bras"],
+      collection: ["All", "Sport Bras"],
       colors: ["Grey"],
       sizes: ["Small", "Medium", "Large"],
     },
@@ -88,7 +88,7 @@ const productData = [
     },
   
     filters: {
-      collection: ['Sport Bras', 'New Arrivals'],
+      collection: ["All", 'Sport Bras', 'New Arrivals'],
       colors: ['Teal', 'Light Green'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -116,7 +116,7 @@ const productData = [
     },
   
     filters: {
-      collection: ['Sport Bras'],
+      collection: ["All", 'Sport Bras'],
       // colors: ['Grey',],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -142,7 +142,7 @@ const productData = [
     },
 
     filters: {
-      collection: ["Sport Bras", "Best Sellers"],
+      collection: ["All", "Sport Bras", "Best Sellers"],
       // colors: ["Grey"],
       sizes: ["Small", "Medium", "Large"],
     },
@@ -168,7 +168,7 @@ const productData = [
     },
 
     filters: {
-      collection: ["Leggings", "New Arrivals"],
+      collection: ["All", "Leggings", "New Arrivals"],
       // colors: ["Grey"],
       sizes: ["Small", "Medium", "Large"],
     },
@@ -199,7 +199,7 @@ const productData = [
     },
   
     filters: {
-      collection: ['Leggings'],
+      collection: ["All", 'Leggings'],
       colors: ['Grey', 'Brown'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -225,7 +225,7 @@ const productData = [
     },
 
     filters: {
-      collection: ["Leggings", "Best Sellers"],
+      collection: ["All", "Leggings", "Best Sellers"],
       // colors: ["Grey"],
       sizes: ["Small", "Medium", "Large"],
     },
@@ -257,7 +257,7 @@ const productData = [
     },
   
     filters: {
-      collection: ['Leggings'],
+      collection: ["All", 'Leggings'],
       colors: ['Navy', 'Purple'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -283,7 +283,7 @@ const productData = [
       color: 'Grey',
     },
     filters: {
-      collection: ['Shirts','New Arrivals'],
+      collection: ["All", 'Shirts','New Arrivals'],
       colors: ['Grey'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -314,7 +314,7 @@ const productData = [
     },
   
     filters: {
-      collection: ['Shirts'],
+      collection: ["All", 'Shirts'],
       colors: ['Burgundy', 'Green'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -340,7 +340,7 @@ const productData = [
     },
   
     filters: {
-      collection: ['Shirts'],
+      collection: ["All", 'Shirts'],
       colors: ['Grey'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -367,7 +367,7 @@ const productData = [
     },
   
     filters: {
-      collection: ['Shirts'],
+      collection: ["All", 'Shirts'],
       // colors: ['Grey'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -393,7 +393,7 @@ const productData = [
     },
   
     filters: {
-      collection: ['Shorts', 'New Arrivals'],
+      collection: ["All", 'Shorts', 'New Arrivals'],
       // colors: ['Grey'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -423,7 +423,7 @@ const productData = [
       }
     },
     filters: {
-      collection: ['Shorts'],
+      collection: ["All", 'Shorts'],
       colors: ['Violet', 'Yellow'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -449,7 +449,7 @@ const productData = [
     },
   
     filters: {
-      collection: ['Shorts', 'Best Sellers'],
+      collection: ["All", 'Shorts', 'Best Sellers'],
       colors: ['Grey'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -476,7 +476,7 @@ const productData = [
     },
   
     filters: {
-      collection: ['Shorts'],
+      collection: ["All", 'Shorts'],
       colors: ['Grey'],
       sizes: ['Small', 'Medium', 'Large'],
     },
@@ -500,22 +500,22 @@ const headerListData = [
       {
         id: 52,
         label: "Home",
-        url: "https://ilyaillych.wixsite.com/mysite-18/",
+        url: "/",
       },
       {
         id: 37,
         label: "Shop",
-        url: "https://ilyaillych.wixsite.com/mysite-18/shop",
+        url: "/shop",
       },
       {
         id: 84,
         label: "About",
-        url: "https://ilyaillych.wixsite.com/mysite-18/",
+        url: "/about",
       },
       {
         id: 96,
         label: "Contact",
-        url: "https://ilyaillych.wixsite.com/mysite-18/contact",
+        url: "/contact",
       },
     ],
   },
@@ -528,17 +528,17 @@ const previewListData = [
       {
         id: 12455,
         label: "The Cielo Story",
-        url: "https://ilyaillych.wixsite.com/mysite-18/",
+        url: "/about",
       },
       {
         id: 124445,
         label: "View Our Collection",
-        url: "https://ilyaillych.wixsite.com/mysite-18/",
+        url: "/shop",
       },
       {
         id: 124845,
         label: "Join Our Community",
-        url: "https://ilyaillych.wixsite.com/mysite-18/",
+        url: "./",
       },
     ],
   },
@@ -552,27 +552,27 @@ const footerListData = [
       {
         id: 20,
         label: "Home",
-        url: "https://ilyaillych.wixsite.com/mysite-18/",
+        url: "/",
       },
       {
         id: 73,
         label: "Shop",
-        url: "https://ilyaillych.wixsite.com/mysite-18/shop",
+        url: "/shop",
       },
       {
         id: 84,
         label: "About",
-        url: "https://ilyaillych.wixsite.com/mysite-18/",
+        url: "/about",
       },
       {
         id: 59,
         label: "Forum",
-        url: "https://ilyaillych.wixsite.com/mysite-18/shop",
+        url: "./",
       },
       {
         id: 60,
         label: "Contact",
-        url: "https://ilyaillych.wixsite.com/mysite-18/contact",
+        url: "/contact",
       },
     ],
   },

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Header.scss";
+import {Link} from 'react-router-dom';
 
 import Avatar from "../svg/Avatar";
 import CartIcon from "../svg/CartIcon";
@@ -11,7 +12,6 @@ const Header = ({ data, type }) => {
   return (
     <header className="header">
       <Promo />
-
       <div className="header__body">
         <CreateLogo />
 

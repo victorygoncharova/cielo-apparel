@@ -1,8 +1,7 @@
 import React from "react";
 import { HeadlineSmall } from "../Headline";
-
+import {Link} from 'react-router-dom';
 import Logo from "../svg/Logo.jsx";
-
 import { ProductList } from "../Product";
 
 
@@ -28,14 +27,14 @@ const CreateColumns = ({ count }) => {
   return <>{arr}</>;
 };
 
+
 const CreateList = ({ data, type }) => {
   const el = data.map((item) => {
     const ul = (
-      <ul className={`${type}__list`}>
+      <ul className={`${type}__list`} key={item.id}>
         <CreateListItem data={item} type={type} />
       </ul>
     );
-
     if ("items" in item && "headline" in item) {
       return (
         <div className={`${type}__column`}>
@@ -53,7 +52,6 @@ const CreateList = ({ data, type }) => {
       return (
         <>
           {ul}
-          {/* {func} */}
         </>
       );
     }
@@ -66,9 +64,9 @@ const CreateListItem = ({ data: { items }, type }) => {
   const li = items.map((item) => {
     return (
       <li className={`${type}__item`} key={item.id}>
-        <a href={item.url} className={`${type}__link`} key={item.id}>
-          <span key={item.id}>{item.label}</span>
-        </a>
+        <Link to={item.url} className={`${type}__link`} target="_self">
+          <span>{item.label}</span>
+        </Link>
       </li>
     );
   });
@@ -79,10 +77,10 @@ const CreateListItem = ({ data: { items }, type }) => {
 const CreateLogo = () => {
   return (
     <div className="logo">
-      <a className="logo__link">
+      <Link to="/" className="logo__link">
         <Logo />
-      </a>
-      <span className="logo__text">Cielo Apparel</span>
+      </Link>
+      <Link to="/" className="logo__text"><span>Cielo Apparel</span></Link>
     </div>
   );
 };

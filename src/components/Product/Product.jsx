@@ -7,6 +7,7 @@ const CreateRibbon = (text, type) => {
 return <span className={`ribbon ribbon_${type}`}>{text}</span>;
 };
 
+
 const ProductList = ({ data }) => {
   const productItem = data.map((item) => {
 
@@ -36,7 +37,7 @@ const ProductList = ({ data }) => {
     const CreateBestProduct = () => {
       return (
         <>
-          {CreateRibbon('Best Seller', 'best')}
+          { CreateRibbon('Best Seller', 'best') }
           {productBody}
         </>
       );
@@ -48,19 +49,19 @@ const ProductList = ({ data }) => {
 
     const checkProduct = (
       (item.filters.collection.includes('New Arrivals')) ? CreateNewProduct() :
-      (item.filters.collection.includes('Best Seller')) ? CreateBestProduct() :
+      (item.filters.collection.includes('Best Sellers')) ? CreateBestProduct() :
       CreateProduct()
 
     );
 
     return (
       <>
-        <div className="product">{checkProduct}</div>
+        <li className="product" key={item.id}>{checkProduct}</li>
       </>
     );
   });
 
-  return <div className='products'>{productItem}</div>;
+  return <ul className='products'>{productItem}</ul>;
 };
 
 export { ProductList };
