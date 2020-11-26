@@ -7,6 +7,8 @@ class Accordion extends Component {
         this.state = {
             items: ['All','Sport Bras', 'Leggings', 'Shirts', 'Shorts', 'New Arrivals', 'Best Sellers'].map((item, index) => ({text: item, id: index + 1 })),
             activeFilter: 'All',
+            sizes: ['Large', 'Medium', 'Small'].map((item, index) => ({text: item, id: index + 1 })),
+            activeSize: false,
             
         };
 
@@ -22,10 +24,11 @@ class Accordion extends Component {
         this.props.clickFilter(text);
     }
 
+
 render() {
 
-   const { items, activeFilter } = this.state;
-    const { clickFilter } = this.props;
+   const { items, activeFilter, sizes } = this.state;
+   const { clickFilter } = this.props;
     
     return (
         <>
@@ -39,7 +42,7 @@ render() {
                     items.map((item, index) => {
                         const text = item.text;
                         return (
-                            <li key={item.index} className={item.text === activeFilter ? 'filter__item active' : 'filter__item'} data-index={index} data-filter={item.text} onClick = {this.clickHandler.bind(this, text)}> {item.text} </li>
+                            <li key={item.id} className={item.text === activeFilter ? 'filter__item active' : 'filter__item'} data-index={index} data-filter={item.text} onClick = {this.clickHandler.bind(this, text)}> {item.text} </li>
                         )
                     })  
                 }
@@ -47,9 +50,26 @@ render() {
                 </ul> 
             </li>
             
+            <li className="filters__item filter">
+                <button className="filter__btn">Size</button>
+                <ul className="filter__list sizes">
+                {
+
+                    sizes.map((item, index) => {
+                        const size = item.text;
+                        return (
+                            <li key={item.index} data-filter={item.text} onClick = {this.clickHandler.bind(this, size)}> 
+                            <input type="checkbox" value={size}/> {item.text}
+                            </li>
+                        )
+                    })  
+                }
+ 
+                </ul> 
+
+            </li>
             <li>Price</li>
-            <li>Color</li>
-            <li>Size</li>
+            <li></li>
         </ul>
        
         </>

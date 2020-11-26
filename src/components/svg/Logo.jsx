@@ -10,6 +10,7 @@ const Logo = () => {
       data-type="shape"
       role="img"
       className="logo__img"
+      fill="currentColor"
     >
       <g>
         <path d="M95.1 74l-21.6 32h9.4l21.6-32h-9.4z" className=""></path>

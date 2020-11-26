@@ -2,7 +2,6 @@ import { CreateList } from "./Constructors";
 import { CreateListItem } from "./Constructors";
 import { CreateColumns } from "./Constructors";
 import { CreateLogo } from "./Constructors";
-import { CreateImage } from "./Constructors";
 import { CreateLatestArrivals } from "./Constructors";
 
 export {
@@ -10,6 +9,5 @@ export {
   CreateListItem,
   CreateColumns,
   CreateLogo,
-  CreateImage,
   CreateLatestArrivals,
 };

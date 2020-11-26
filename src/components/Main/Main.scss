@@ -1,16 +1,63 @@
-@import "../../abstracts/variables";
-@import "../../abstracts/mixins";
+@import '../../abstracts/base';
 
 
 .main {
   width: 100%;
-  margin-top: $header-height;
   flex: 1 1 auto;
+
+  & .product {
+    &:nth-child(1) {
+      order: 3;
+    }
+    &:nth-child(2) {
+      order: 4;
+    }
+    &:nth-child(3) {
+      order: 1;
+    }
+    &:nth-child(4) {
+      order: 2;
+    }
+  }
+  & .columns {
+    height: 610px;
+    &__left {
+      flex: 0 0 40%; 
+      text-align: center;
+
+    }
+    &__content {
+      padding: 0 20% 0 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__headline {
+      text-transform: capitalize;
+    }
+  }
+  
+  
 }
 
 .new-arrival {
   width: 100%;
   padding: 0 2%;
   
+}
+
+.follow-section {
+  @media (max-width: 767px) {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+.follow {
+  padding: 0 35% 0 35%;
+  order: 1;
+  @media (max-width: 767px) {
+    padding: 0 15% 0 15%;
+  }
 }
 

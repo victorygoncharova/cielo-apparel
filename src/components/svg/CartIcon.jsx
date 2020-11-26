@@ -10,6 +10,7 @@ const CartIcon = () => {
         height="100%"
         viewBox="0 0 329.7 134.5"
         className="icon__img"
+        fill="currentColor"
       >
         <path
           className="m8g_G"
@@ -19,7 +20,6 @@ const CartIcon = () => {
           x="265"
           y="69"
           dy=".35em"
-          text-anchor="middle"
           className="_1INsc rb-zeplin-selected"
         >
           1

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {ProductList} from '../Product';
+import Products from '../Product';
 import './Shop.scss';
 import Accordion from '../Accordion';
 
@@ -13,22 +13,12 @@ const Shop = ({data, clickFilter}) => {
                 <Accordion clickFilter={(text) => clickFilter(text)}/>
                 </div>
                 <div className="shop__products">
-                <ProductList data={data} />
+                <Products data={data} />
                 </div>
             </div>
         </div>
     );
 }
-
-
-
-
-
-
-
-
-
-
 
 
 export default Shop;

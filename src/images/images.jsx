@@ -58,6 +58,28 @@ import product015full from "./products/product-0015-full.jpg";
 import product016 from "./products/product-0016.webp";
 import product016full from "./products/product-0016-full.jpg";
 
+
+import slideshow01 from "./products/slide-show-01.jpg";
+import slideshow02 from "./products/slide-show-02.jpg";
+import slideshow03 from "./products/slide-show-03.jpg";
+import slideshow04 from "./products/slide-show-04.jpg";
+import slideshow05 from "./products/slide-show-05.jpg";
+import slideshow06 from "./products/slide-show-06.jpg";
+import slideshow07 from "./products/slide-show-07.jpg";
+import slideshow08 from "./products/slide-show-08.jpg";
+import slideshow09 from "./products/slide-show-09.jpg";
+import slideshow10 from "./products/slide-show-10.jpg";
+import slideshow11 from "./products/slide-show-11.jpg";
+import slideshow12 from "./products/slide-show-12.jpg";
+
+
+import shopColumnImg from "./shop-column-img.webp";
+import contactColumnImg from "./contact-column-img.webp";
+import aboutColumnImg from "./about-column-img.webp";
+import homeColumnVideo from "./home-column-video.mp4";
+
+
+
 export {
   product001,
   product001full,
@@ -99,4 +121,20 @@ export {
   product015full,
   product016,
   product016full,
+  slideshow01,
+  slideshow02,
+  slideshow03,
+  slideshow04,
+  slideshow05,
+  slideshow06,
+  slideshow07,
+  slideshow08,
+  slideshow09,
+  slideshow10,
+  slideshow11,
+  slideshow12,
+  shopColumnImg,
+  contactColumnImg,
+  aboutColumnImg,
+  homeColumnVideo
 };

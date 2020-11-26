@@ -1,0 +1,11 @@
+@import '../../abstracts/base';
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__page {
+        width: 300px;
+        overflow: hidden;
+    }
+}

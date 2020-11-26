@@ -1,7 +1,7 @@
 import React from "react";
 import "./Headline.scss";
 
-const HeadlineUpperCase = ({ text }) => {
+const HeadlineUpperCase = ({ text}) => {
   const mod = "headline_upper";
   return <h2 className={`headline ${mod}`}>{text}</h2>;
 };

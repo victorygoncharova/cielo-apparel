@@ -1,16 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from "../Header";
 import Footer from "../Footer";
 import Main from "../Main";
-import Shop from "../Shop"
-
-import { footerListData, headerListData, previewListData, productData } from "../../data";
-
-
-import {HomePage, ShopPage, ShippingPage, AboutPage, ContactPage} from '../Pages';
-
-
+import { footerListData, headerListData, productData } from "../../data";
+import {ShopPage, AboutPage, ContactPage} from '../Pages';
+import {SignUp, Login} from '../Login';
 
 import "./App.scss";
 
@@ -34,24 +29,37 @@ constructor() {
 
 }
 
-
 render() {
   const { productData } = this.state;
+  
   return (
 
     <Router>
     <div className="wrapper">
-    {/* <Header data={headerListData} type="header" /> */}
-      <Route path="/" component={HomePage} exact/>
 
+    <Switch>
+      
+      <Route exact path="/sign-up" component={SignUp} />
+      <Route exact path="/log-in" component={Login} />
+      <Header data={headerListData} type="header"/>
+      
+    </Switch>
 
-      <Route path="/shop"><ShopPage data = {this.state.productData} clickFilter={this.clickFilter}/></Route>
+     
+      <Route exact path="/" component={Main} />
+      <Route exact path="/shop"><ShopPage data = {this.state.productData} clickFilter={this.clickFilter}/></Route>
 
+      <Route path="/shop/:id" render={({match}) => {
+                const { id } = match.params;
+                return <Login />
+              }
+}/>
 
-      <Route path="/shipping-returns" component={ShippingPage} />
       <Route path="/about" component={AboutPage} />
       <Route path="/contact" component={ContactPage} />
-    {/* <Footer data={footerListData} type="footer" /> */}
+      <Route path="/(|shop|about|contact)"><Footer exact data={footerListData} type="footer" /></Route>
+
+
   </div>
   </Router>
   );

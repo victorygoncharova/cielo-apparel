@@ -39,13 +39,25 @@ import {
   product015full,
   product016,
   product016full,
+  slideshow01,
+  slideshow02,
+  slideshow03,
+  slideshow04,
+  slideshow05,
+  slideshow06,
+  slideshow07,
+  slideshow08,
+  slideshow09,
+  slideshow10,
+  slideshow11,
+  slideshow12
 } from './images/images';
 
 
 
 const productData = [
   {
-    id: 49,
+    id: 1,
     title: "I'm a Product",
     sku: "0001",
     price: 21,
@@ -72,7 +84,7 @@ const productData = [
   },
 
   {
-    id: 50,
+    id: 2,
     title: 'Seamless Bra',
     sku: '0002',
     price: 18,
@@ -105,7 +117,7 @@ const productData = [
 
 
 {
-    id: 51,
+    id: 3,
     title: "I'm a Product",
     sku: "0003",
     price: 15,
@@ -131,7 +143,7 @@ const productData = [
 
   },
   {
-    id: 52,
+    id: 4,
     title: "I'm a Product",
     sku: "0004",
     price: 25,
@@ -157,7 +169,7 @@ const productData = [
 
   },
   {
-    id: 53,
+    id: 5,
     title: "Printed Leggings",
     sku: "0005",
     price: 28,
@@ -183,7 +195,7 @@ const productData = [
 
   },
   {
-    id: 54,
+    id: 6,
     title: "I'm a Product",
     sku: "0006",
     price: 40,
@@ -214,7 +226,7 @@ const productData = [
 
   },
   {
-    id: 55,
+    id: 7,
     title: "I'm a Product",
     sku: "0007",
     price: 21,
@@ -241,7 +253,7 @@ const productData = [
 
   },
   {
-    id: 56,
+    id: 8,
     title: "I'm a Product",
     sku: "0008",
     price: 32,
@@ -273,7 +285,7 @@ const productData = [
   },
 
   {
-    id: 57,
+    id: 9,
     title: "Running Top",
     sku: "0009",
     price: 19,
@@ -298,7 +310,7 @@ const productData = [
 
   },
   {
-    id: 58,
+    id: 10,
     title: "I'm a Product",
     sku: "0010",
     price: 22,
@@ -329,7 +341,7 @@ const productData = [
 
   },
   {
-    id: 59,
+    id: 11,
     title: "I'm a Product",
     sku: "0011",
     price: 15,
@@ -356,7 +368,7 @@ const productData = [
   },
 
   {
-    id: 60,
+    id: 12,
     title: "I'm a Product",
     sku: "0012",
     price: 12,
@@ -382,7 +394,7 @@ const productData = [
 
   },
   {
-    id: 61,
+    id: 13,
     title: "Running Shorts",
     sku: "0013",
     price: 9,
@@ -408,7 +420,7 @@ const productData = [
 
   },
   {
-    id: 62,
+    id: 14,
     title: "I'm a Product",
     sku: "0014",
     price: 18,
@@ -438,7 +450,7 @@ const productData = [
 
   },
   {
-    id: 63,
+    id: 15,
     title: "I'm a Product",
     sku: "0015",
     price: 18,
@@ -465,7 +477,7 @@ const productData = [
   },
 
   {
-    id: 64,
+    id: 16,
     title: "I'm a Product",
     sku: "0016",
     price: 12,
@@ -492,6 +504,72 @@ const productData = [
   },
 ];
 
+
+
+
+const slideShowData = [
+  {
+    id: 1,
+    img: slideshow01,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 2,
+    img: slideshow02,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 3,
+    img: slideshow03,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 4,
+    img: slideshow04,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 5,
+    img: slideshow05,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 6,
+    img: slideshow06,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 7,
+    img: slideshow07,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 8,
+    img: slideshow08,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 9,
+    img: slideshow09,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 10,
+    img: slideshow10,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 11,
+    img: slideshow11,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  },
+  {
+    id: 12,
+    img: slideshow12,
+    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+  }
+
+]
 
 const headerListData = [
   {
@@ -613,4 +691,4 @@ const footerListData = [
 
 
 
-export { footerListData, headerListData, productData, previewListData };
+export { footerListData, headerListData, productData, previewListData, slideShowData };

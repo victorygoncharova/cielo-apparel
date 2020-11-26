@@ -1,11 +1,12 @@
 import React from "react";
 import "./Button.scss";
+import {Link} from 'react-router-dom';
 
 const Button = ({ text, url, mod }) => {
   return (
-    <a className={`btn btn__${mod}`} href={url}>
+    <Link to={url} className={`btn btn__${mod}`} >
       {text}
-    </a>
+    </Link>
   );
 };
 

@@ -2,29 +2,27 @@ import React from "react";
 import { HeadlineSmall } from "../Headline";
 import {Link} from 'react-router-dom';
 import Logo from "../svg/Logo.jsx";
-import { ProductList } from "../Product";
-
-
+import Products from "../Product";
+import './Constructors.scss';
 
 const CreateLatestArrivals = ({ data }) => {
   const newData = data.filter(item => item.filters.collection.includes('New Arrivals'));
-  return <ProductList data={newData} />;
+  return <Products data={newData} />;
 };
 
 
-const CreateImage = ({ src }) => {
-  return <img src={src} />;
-};
-
-
-
-const CreateColumns = ({ count }) => {
-  let arr = [];
-  for (let i = 0; i < count; i++) {
-    const el = <div className="column"></div>;
-    arr.push(el);
-  }
-  return <>{arr}</>;
+const CreateColumns = ({text, img, header}) => {
+  return (
+    <div className="columns">
+      <div className="columns__left">
+        <div className="columns__content">
+        {header}
+        {text}
+        </div>
+      </div>
+      <div className="columns__right">{img}</div>
+    </div>
+  )
 };
 
 
@@ -46,6 +44,10 @@ const CreateList = ({ data, type }) => {
       return (
         <div className={`${type}__column`}>
           <HeadlineSmall text={item.headline} />
+          <form action="" method="POST" className="columns__form form form_footer">
+          <input type="email" className="form__field" id="input-1" name="email" placeholder="Enter your email here" required/>
+          <button className="btn btn_footer">Submit</button>
+          </form>
         </div>
       );
     } else {
@@ -85,4 +87,4 @@ const CreateLogo = () => {
   );
 };
 
-export { CreateList, CreateListItem, CreateColumns, CreateLogo, CreateImage, CreateLatestArrivals };
+export { CreateList, CreateListItem, CreateColumns, CreateLogo, CreateLatestArrivals };
