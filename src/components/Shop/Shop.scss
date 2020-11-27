@@ -6,9 +6,67 @@
     padding: 0 2%;
     &__row {
         display: flex;
+        @media (max-width: 767px) {
+            display: block;
+            margin-bottom: 40px;
+        }
     }
-    &__filters {
-        flex: 0 0 12%;
-        padding: 20px;
+
+}
+
+.filters {
+    flex: 0 0 14%;
+    padding: 30px;
+    @media (max-width: 767px) {
+        display: none;
     }
+    &__headline {
+        color: $main-dark-grey;
+        font-size: rem(26px);
+        margin-bottom: 20px;
+        border-bottom: 1px solid #c9c9c9;
+        padding-bottom: 15px;
+    }
+    &__item {
+        border-bottom: 1px solid #c9c9c9;
+        padding: 20px 0;
+    }
+
+}
+
+
+.filter {
+    &__colors {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 6px;
+        margin-bottom: 10px;
+    }
+    &__btn {
+        font-size: rem(16px);
+        color: $main-dark-grey;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        font-size: rem(14px);
+        color: $main-dark-grey;
+        line-height: 24px;
+    }
+    &__sizes {
+        font-size: rem(14px);
+        color: $main-dark-grey;
+        line-height: 24px;
+    }
+}
+
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    
 }

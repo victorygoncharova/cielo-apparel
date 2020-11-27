@@ -32,6 +32,7 @@
     padding-right: 10px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
     @media (max-width: 767px) {
       flex-direction: column;
       padding-right: 0;
@@ -89,6 +90,7 @@
     height: 50px;
     opacity: 0;
     visibility: hidden;
+    text-align: center;
     &.active {
       opacity: 1;
       visibility: visible;
@@ -98,6 +100,7 @@
       font-size: rem(14px);
       color: $main-dark-grey;
       text-decoration: none;
+      padding-top: 15px;
     }
   }
 

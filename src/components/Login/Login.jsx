@@ -7,7 +7,7 @@ const Login = () => {
 
     const content = (
         <div class='login__page'>
-            <Link to ="./">d</Link>
+            <Link to = "./" className="exit"></Link>
             <h1 className="headline headline_login">Log In</h1>
            <div className="login__link"> 
                 <span>New to this site?</span>
@@ -15,11 +15,9 @@ const Login = () => {
             </div>
             <button className="login__btn login__btn_fb">Log in with Facebook</button>
             <button className="login__btn login__btn_g">Log in with Google</button>
-            <div>
-                <hr/>
-                <span>or</span>
-                <hr/>
-            </div>
+ 
+            <span className="login__or">or</span>
+
             <button className="login__btn login__btn_email">Log in with email</button>
         </div>
     );

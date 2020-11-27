@@ -7,6 +7,8 @@ import { footerListData, headerListData, productData } from "../../data";
 import {ShopPage, AboutPage, ContactPage} from '../Pages';
 import {SignUp, Login} from '../Login';
 
+import ProductPage from '../ProductPage';
+
 import "./App.scss";
 
 export default class App extends Component {
@@ -51,9 +53,8 @@ render() {
 
       <Route path="/shop/:id" render={({match}) => {
                 const { id } = match.params;
-                return <Login />
-              }
-}/>
+                return <ProductPage id={id} />
+              }}/>
 
       <Route path="/about" component={AboutPage} />
       <Route path="/contact" component={ContactPage} />

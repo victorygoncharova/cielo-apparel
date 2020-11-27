@@ -662,14 +662,14 @@ const footerListData = [
       {
         id: 98,
         label: "Shipping & Returns",
-        url: "https://ilyaillych.wixsite.com/mysite-18/shipping-returns",
+        url: "./",
       },
       {
         id: 10,
         label: "Store Policy",
-        url: "https://ilyaillych.wixsite.com/mysite-18/",
+        url: "./",
       },
-      { id: 11, label: "Payment Methods", url: "#" },
+      { id: 11, label: "Payment Methods", url: "./" },
     ],
   },
   {
@@ -688,7 +688,62 @@ const footerListData = [
   },
 ];
 
+const colors = [
+  {
+    id: 1,
+    code: '#7f6000',
+    name: 'Brown'
+    },
+    
+    {
+      id: 2,
+    code: '#762e54',
+    name: 'Burgundy'
+    },
+    {
+      id: 3,
+    code: '#cfcfcf',
+    name: 'Gray'
+    },
+
+    {
+      id: 4,
+    code: '#008000',
+    name: 'Green'
+    },
+    {
+      id: 5,
+    code: '#d2f58d',
+    name: 'Light Green'
+    },
+    {
+      id: 6,
+    code: '#324a7b',
+    name: 'Navy'
+    },
+    {
+      id: 7,
+    code: '#800080',
+    name: 'Purple'
+    },
+    {
+      id: 8,
+    code: '#8ae7ce',
+    name: 'Teal'
+    },
+    {
+      id: 9,
+    code: '#5767be',
+    name: 'Violet'
+    },
+    {
+      id: 10,
+    code: '#eddd59',
+    name: 'Yellow'
+    }
+]
 
 
 
-export { footerListData, headerListData, productData, previewListData, slideShowData };
+
+export { footerListData, headerListData, productData, previewListData, slideShowData, colors };

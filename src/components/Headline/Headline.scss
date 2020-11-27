@@ -9,9 +9,13 @@
 
   }
   &_upper {
-    font-size: rem(44px);
+    font-size: rem(48px);
     text-transform: uppercase;
     letter-spacing: 1.30px;
     margin: 80px 0 86px;
+  }
+  &_login {
+    font-size: rem(44px);
+    margin-bottom: 28px;
   }
 }

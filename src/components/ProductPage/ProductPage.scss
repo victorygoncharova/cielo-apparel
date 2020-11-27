@@ -1,0 +1,138 @@
+@import '../../abstracts/base';
+
+
+.product-page {
+    margin-top: $header-height + 30;
+    margin-bottom: 72px;
+    flex: 1 0 auto;
+    &__row {
+        padding: 0 25%;
+        display: flex;
+    }
+    &__left {
+        width: 534px;
+        padding-left: 34px;
+        margin-right: 35px;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        & > img {
+            max-width: 100%;
+        }
+    }
+    &__right {
+        flex: 1 0 auto;
+        padding-right: 46px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__descr {
+        margin-top: 28px;
+        color: $main-dark-grey;
+        font-size: rem(18px);
+        line-height: 27px;
+    }
+    &__title {
+        font-size: rem(21px);
+        @include bold-headlines-font;
+        margin-bottom: 6px;
+    }
+    &__sku {
+        color: $middle-grey;
+        font-size: rem(16px);
+        margin-bottom: 24px;
+    }
+    &__price {
+        color: #575757;
+        font-size: rem(16px);
+        margin-bottom: 24px;
+    }
+    &__label {
+        margin-bottom: 6px;
+        color: $middle-grey;
+        font-size: rem(16px);
+    }
+    &__input {
+        margin-top: 4px;
+        width: 88px;
+        height: 45px;
+        border: 1px solid #c9c9c9;
+
+    }
+    &__btn {
+        height: 40px;
+        margin: 32px 0 24px;
+    }
+}
+
+
+.select {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    &__title {
+        width: 100%;
+        border: 1px solid #c9c9c9;
+        background: transparent;
+        height: 40px;
+        text-align: left;
+    }
+    &__options {
+        position: absolute;
+        top: 39px;
+        list-style: none;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        z-index: 10;
+        border: 1px solid #c9c9c9;
+    }
+    &__option {
+        width: 100%;
+        border: none;
+        background: #fff;
+        text-align: left;
+        height: 30px;
+        line-height: 30px;
+    }
+    &.active {
+        .select__options {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    
+}
+
+.accordion {
+
+    &__text {
+        width: 100%;
+        max-height: 0px;
+        display: none;
+        overflow: hidden;
+    }
+
+    &.active {
+        & .accordion__text {
+        width: 100%;
+        display: block;
+        overflow: visible;
+        }
+    }
+    &__btn {
+        padding: 24px 0;
+        background: transparent;
+        padding-bottom: 24px;
+        color: $main-dark-grey;
+        font-size: rem(18px);
+        font-weight: 400;
+    }
+}
+
+.columns__accordion {
+    border-bottom: 1px solid #c9c9c9;
+
+}

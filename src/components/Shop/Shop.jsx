@@ -9,7 +9,7 @@ const Shop = ({data, clickFilter}) => {
     return (
         <div className='shop'>
             <div className='shop__row'>
-                <div className='shop__filters filters'>
+                <div className='filters'>
                 <Accordion clickFilter={(text) => clickFilter(text)}/>
                 </div>
                 <div className="shop__products">

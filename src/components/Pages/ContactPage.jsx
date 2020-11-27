@@ -23,6 +23,7 @@ const ContactPage = () => {
             </div>
             <input type="text" className="form__field form__field_text" id="input-3" name="email" placeholder="Type your message here..." required/>
             <button className="form__btn">Submit</button>
+            
         </form>
         <span className="columns__label">Stocklist</span>
         <p className="columns__text">Store 1<br/>500 Terry Francois Street<br/>San Francisco, CA 94158<br/>Tel: 123-456-7890</p>

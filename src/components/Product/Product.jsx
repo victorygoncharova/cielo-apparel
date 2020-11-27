@@ -108,13 +108,13 @@ class Products extends Component {
     const activeId = id;
     return (
       <>   
-        <a data-id={item.id} href="/" className="product__img">
+        <Link to={`/shop/${item.id}`} data-id={item.id} href="/" className="product__img">
             <img className="product__pic" src={item.images.path} />
-        </a>
+        </Link>
         
-        <button data-id={item.id} className={(this.state.isHovered && (this.state.hoverId === activeId)) ? `${classes} active` : classes} onClick={() => this.createQuickView(item.id)}>
+        <Link to={`/shop/${item.id}`} data-id={item.id} className={(this.state.isHovered && (this.state.hoverId === activeId)) ? `${classes} active` : classes} onClick={() => this.createQuickView(item.id)}>
           Quick View 
-        </button>
+        </Link>
 
         <HeadlineProduct text={item.title} url="#"/>
         <span data-id={item.id} className="product__price">{`${item.price}.00₴`}</span>
@@ -138,9 +138,6 @@ class Products extends Component {
     return (
       <>
         <ul className='products'>{this.createList(data)}</ul>
-        {this.state.showModal && (<QuickView>
-          <div className="zzz">hhhhh</div>
-      </QuickView>)}
       </>
     )
   }
