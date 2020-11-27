@@ -1,8 +1,5 @@
-import ShopPage from './ShopPage';
-import AboutPage from './AboutPage';
-import ContactPage from './ContactPage';
+import ShopPage from "./ShopPage";
+import AboutPage from "./AboutPage";
+import ContactPage from "./ContactPage";
 
-
-
-
-export {ShopPage, AboutPage, ContactPage};
+export { ShopPage, AboutPage, ContactPage };

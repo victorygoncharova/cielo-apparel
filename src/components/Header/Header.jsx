@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Header.scss";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Avatar from "../svg/Avatar";
 import CartIcon from "../svg/CartIcon";
 import Promo from "../Promo";
@@ -8,27 +8,24 @@ import Promo from "../Promo";
 import { CreateList, CreateLogo } from "../Constructors";
 
 export default class Header extends Component {
-
   constructor() {
     super();
     this.state = {
       isOpened: false,
-    }
+    };
 
     this.onToggleBurger = () => {
-      this.setState(({isOpened}) => {
+      this.setState(({ isOpened }) => {
         return {
           isOpened: !isOpened,
-        }
-      })
-    }
+        };
+      });
+    };
   }
 
-  
   render() {
-
     const { data, type } = this.props;
-    const {isOpened} = this.state;
+    const { isOpened } = this.state;
     const classes = "header__body";
 
     return (
@@ -37,10 +34,9 @@ export default class Header extends Component {
         <div className={isOpened ? `${classes} open` : classes}>
           <CreateLogo />
           <button className="header__burger" onClick={this.onToggleBurger}>
-                <span></span>
-              </button>
+            <span></span>
+          </button>
           <nav className="header__nav">
-  
             <CreateList data={data} type={type} />
           </nav>
           <div className="user-nav">
@@ -49,12 +45,9 @@ export default class Header extends Component {
               <span className="user-nav__text">Log In</span>
             </Link>
             <CartIcon />
-  
           </div>
         </div>
       </header>
     );
   }
-
-};
-
+}

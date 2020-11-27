@@ -1,4 +1,4 @@
-@import '../../abstracts/base';
+@import "../../abstracts/base";
 
 .headline {
   text-align: center;
@@ -6,12 +6,11 @@
   @include bold-headlines-font;
   &_small {
     font-size: rem(21px);
-
   }
   &_upper {
     font-size: rem(48px);
     text-transform: uppercase;
-    letter-spacing: 1.30px;
+    letter-spacing: 1.3px;
     margin: 80px 0 86px;
   }
   &_login {

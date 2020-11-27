@@ -1,5 +1,4 @@
-@import '../../abstracts/base';
-
+@import "../../abstracts/base";
 
 .main {
   width: 100%;
@@ -22,9 +21,8 @@
   & .columns {
     height: 610px;
     &__left {
-      flex: 0 0 40%; 
+      flex: 0 0 40%;
       text-align: center;
-
     }
     &__content {
       padding: 0 20% 0 20%;
@@ -36,21 +34,18 @@
       text-transform: capitalize;
     }
   }
-  
-  
 }
 
 .new-arrival {
   width: 100%;
   padding: 0 2%;
-  
 }
 
 .follow-section {
   @media (max-width: 767px) {
-  display: flex;
-  flex-direction: column;
-}
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .follow {
@@ -60,4 +55,3 @@
     padding: 0 15% 0 15%;
   }
 }
-

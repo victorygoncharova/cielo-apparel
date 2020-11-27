@@ -1,5 +1,4 @@
-@import '../../abstracts/base';
-
+@import "../../abstracts/base";
 
 .footer {
   display: flex;
@@ -29,7 +28,6 @@
         order: 4;
       }
     }
-    
   }
   &__list {
     text-align: center;
@@ -62,9 +60,7 @@
 
   .headline_small {
     margin-bottom: 30px;
-
   }
-
 }
 
 .form_footer {

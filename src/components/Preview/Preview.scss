@@ -1,4 +1,4 @@
-@import '../../abstracts/base';
+@import "../../abstracts/base";
 
 .preview {
   background-color: #f5f5f5;
@@ -15,7 +15,7 @@
     @media (max-width: 767px) {
       flex-direction: column;
       height: 1700px;
-  }
+    }
   }
   &__item {
     flex: 0 1 33.3333%;
@@ -31,13 +31,16 @@
       margin-right: 0;
     }
     &:first-child {
-      background: url('../../images/preview-1.webp') center center/cover no-repeat;
+      background: url("../../images/preview-1.webp") center center/cover
+        no-repeat;
     }
     &:nth-child(2) {
-      background: url("../../images/preview-2.webp") center center/cover no-repeat;
+      background: url("../../images/preview-2.webp") center center/cover
+        no-repeat;
     }
     &:last-child {
-      background: url("../../images/preview-3.webp") center center/cover no-repeat;
+      background: url("../../images/preview-3.webp") center center/cover
+        no-repeat;
     }
   }
   &__link {

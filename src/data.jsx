@@ -50,10 +50,8 @@ import {
   slideshow09,
   slideshow10,
   slideshow11,
-  slideshow12
-} from './images/images';
-
-
+  slideshow12,
+} from "./images/images";
 
 const productData = [
   {
@@ -85,24 +83,24 @@ const productData = [
 
   {
     id: 2,
-    title: 'Seamless Bra',
-    sku: '0002',
+    title: "Seamless Bra",
+    sku: "0002",
     price: 18,
     images: {
       path: product002,
       pathFullSize: product002full,
-      color: 'Teal',
+      color: "Teal",
       modification: {
         path: product002yellow,
         pathFullSize: product002yellowfull,
-        color: 'Light Green',
-      }
+        color: "Light Green",
+      },
     },
-  
+
     filters: {
-      collection: ["All", 'Sport Bras', 'New Arrivals'],
-      colors: ['Teal', 'Light Green'],
-      sizes: ['Small', 'Medium', 'Large'],
+      collection: ["All", "Sport Bras", "New Arrivals"],
+      colors: ["Teal", "Light Green"],
+      sizes: ["Small", "Medium", "Large"],
     },
 
     descr:
@@ -115,8 +113,7 @@ const productData = [
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
   },
 
-
-{
+  {
     id: 3,
     title: "I'm a Product",
     sku: "0003",
@@ -126,11 +123,11 @@ const productData = [
       pathFullSize: product003full,
       // color: 'Grey',
     },
-  
+
     filters: {
-      collection: ["All", 'Sport Bras'],
+      collection: ["All", "Sport Bras"],
       // colors: ['Grey',],
-      sizes: ['Small', 'Medium', 'Large'],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -140,7 +137,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
   {
     id: 4,
@@ -166,7 +162,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
   {
     id: 5,
@@ -192,7 +187,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
   {
     id: 6,
@@ -202,18 +196,18 @@ const productData = [
     images: {
       path: product006,
       pathFullSize: product006full,
-      color: 'Grey',
+      color: "Grey",
       modification: {
         path: product006brown,
         pathFullSize: product006brownfull,
-        color: 'Brown',
-      }
+        color: "Brown",
+      },
     },
-  
+
     filters: {
-      collection: ["All", 'Leggings'],
-      colors: ['Grey', 'Brown'],
-      sizes: ['Small', 'Medium', 'Large'],
+      collection: ["All", "Leggings"],
+      colors: ["Grey", "Brown"],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -223,7 +217,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
   {
     id: 7,
@@ -250,7 +243,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
   {
     id: 8,
@@ -260,18 +252,18 @@ const productData = [
     images: {
       path: product008,
       pathFullSize: product008full,
-      color: 'Navy',
+      color: "Navy",
       modification: {
         path: product008,
         pathFullSize: product008full,
-        color: 'Purple',
-      }
+        color: "Purple",
+      },
     },
-  
+
     filters: {
-      collection: ["All", 'Leggings'],
-      colors: ['Navy', 'Purple'],
-      sizes: ['Small', 'Medium', 'Large'],
+      collection: ["All", "Leggings"],
+      colors: ["Navy", "Purple"],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -281,7 +273,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
 
   {
@@ -292,12 +283,12 @@ const productData = [
     images: {
       path: product009,
       pathFullSize: product009full,
-      color: 'Grey',
+      color: "Grey",
     },
     filters: {
-      collection: ["All", 'Shirts','New Arrivals'],
-      colors: ['Grey'],
-      sizes: ['Small', 'Medium', 'Large'],
+      collection: ["All", "Shirts", "New Arrivals"],
+      colors: ["Grey"],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -307,7 +298,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
   {
     id: 10,
@@ -317,18 +307,18 @@ const productData = [
     images: {
       path: product010,
       pathFullSize: product010full,
-      color: 'Burgundy',
+      color: "Burgundy",
       modification: {
         path: product010green,
         pathFullSize: product010greenfull,
-        color: 'Green',
-      }
+        color: "Green",
+      },
     },
-  
+
     filters: {
-      collection: ["All", 'Shirts'],
-      colors: ['Burgundy', 'Green'],
-      sizes: ['Small', 'Medium', 'Large'],
+      collection: ["All", "Shirts"],
+      colors: ["Burgundy", "Green"],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -338,7 +328,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
   {
     id: 11,
@@ -348,13 +337,13 @@ const productData = [
     images: {
       path: product011,
       pathFullSize: product011full,
-      color: 'Grey',
+      color: "Grey",
     },
-  
+
     filters: {
-      collection: ["All", 'Shirts'],
-      colors: ['Grey'],
-      sizes: ['Small', 'Medium', 'Large'],
+      collection: ["All", "Shirts"],
+      colors: ["Grey"],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -364,7 +353,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
 
   {
@@ -377,11 +365,11 @@ const productData = [
       pathFullSize: product012full,
       // color: 'Grey',
     },
-  
+
     filters: {
-      collection: ["All", 'Shirts'],
+      collection: ["All", "Shirts"],
       // colors: ['Grey'],
-      sizes: ['Small', 'Medium', 'Large'],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -391,7 +379,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
   {
     id: 13,
@@ -403,11 +390,11 @@ const productData = [
       pathFullSize: product013full,
       // color: 'Grey',
     },
-  
+
     filters: {
-      collection: ["All", 'Shorts', 'New Arrivals'],
+      collection: ["All", "Shorts", "New Arrivals"],
       // colors: ['Grey'],
-      sizes: ['Small', 'Medium', 'Large'],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -417,7 +404,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
   {
     id: 14,
@@ -427,17 +413,17 @@ const productData = [
     images: {
       path: product014,
       pathFullSize: product014full,
-      color: 'Violet',
+      color: "Violet",
       modification: {
         path: product014yellow,
         pathFullSize: product014yellowfull,
-        color: 'Yellow',
-      }
+        color: "Yellow",
+      },
     },
     filters: {
-      collection: ["All", 'Shorts'],
-      colors: ['Violet', 'Yellow'],
-      sizes: ['Small', 'Medium', 'Large'],
+      collection: ["All", "Shorts"],
+      colors: ["Violet", "Yellow"],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -447,7 +433,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
   {
     id: 15,
@@ -457,13 +442,13 @@ const productData = [
     images: {
       path: product015,
       pathFullSize: product015full,
-      color: 'Grey',
+      color: "Grey",
     },
-  
+
     filters: {
-      collection: ["All", 'Shorts', 'Best Sellers'],
-      colors: ['Grey'],
-      sizes: ['Small', 'Medium', 'Large'],
+      collection: ["All", "Shorts", "Best Sellers"],
+      colors: ["Grey"],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -473,7 +458,6 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
 
   {
@@ -484,13 +468,13 @@ const productData = [
     images: {
       path: product016,
       pathFullSize: product016full,
-      color: 'Grey',
+      color: "Grey",
     },
-  
+
     filters: {
-      collection: ["All", 'Shorts'],
-      colors: ['Grey'],
-      sizes: ['Small', 'Medium', 'Large'],
+      collection: ["All", "Shorts"],
+      colors: ["Grey"],
+      sizes: ["Small", "Medium", "Large"],
     },
     descr:
       "I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.",
@@ -500,76 +484,71 @@ const productData = [
       "I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.",
     shipping:
       "I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.",
-
   },
 ];
-
-
-
 
 const slideShowData = [
   {
     id: 1,
     img: slideshow01,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 2,
     img: slideshow02,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 3,
     img: slideshow03,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 4,
     img: slideshow04,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 5,
     img: slideshow05,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 6,
     img: slideshow06,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 7,
     img: slideshow07,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 8,
     img: slideshow08,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 9,
     img: slideshow09,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 10,
     img: slideshow10,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 11,
     img: slideshow11,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
   },
   {
     id: 12,
     img: slideshow12,
-    text: '@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com',
-  }
-
-]
+    text: "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com",
+  },
+];
 
 const headerListData = [
   {
@@ -691,59 +670,63 @@ const footerListData = [
 const colors = [
   {
     id: 1,
-    code: '#7f6000',
-    name: 'Brown'
-    },
-    
-    {
-      id: 2,
-    code: '#762e54',
-    name: 'Burgundy'
-    },
-    {
-      id: 3,
-    code: '#cfcfcf',
-    name: 'Gray'
-    },
+    code: "#7f6000",
+    name: "Brown",
+  },
 
-    {
-      id: 4,
-    code: '#008000',
-    name: 'Green'
-    },
-    {
-      id: 5,
-    code: '#d2f58d',
-    name: 'Light Green'
-    },
-    {
-      id: 6,
-    code: '#324a7b',
-    name: 'Navy'
-    },
-    {
-      id: 7,
-    code: '#800080',
-    name: 'Purple'
-    },
-    {
-      id: 8,
-    code: '#8ae7ce',
-    name: 'Teal'
-    },
-    {
-      id: 9,
-    code: '#5767be',
-    name: 'Violet'
-    },
-    {
-      id: 10,
-    code: '#eddd59',
-    name: 'Yellow'
-    }
-]
+  {
+    id: 2,
+    code: "#762e54",
+    name: "Burgundy",
+  },
+  {
+    id: 3,
+    code: "#cfcfcf",
+    name: "Gray",
+  },
 
+  {
+    id: 4,
+    code: "#008000",
+    name: "Green",
+  },
+  {
+    id: 5,
+    code: "#d2f58d",
+    name: "Light Green",
+  },
+  {
+    id: 6,
+    code: "#324a7b",
+    name: "Navy",
+  },
+  {
+    id: 7,
+    code: "#800080",
+    name: "Purple",
+  },
+  {
+    id: 8,
+    code: "#8ae7ce",
+    name: "Teal",
+  },
+  {
+    id: 9,
+    code: "#5767be",
+    name: "Violet",
+  },
+  {
+    id: 10,
+    code: "#eddd59",
+    name: "Yellow",
+  },
+];
 
-
-
-export { footerListData, headerListData, productData, previewListData, slideShowData, colors };
+export {
+  footerListData,
+  headerListData,
+  productData,
+  previewListData,
+  slideShowData,
+  colors,
+};

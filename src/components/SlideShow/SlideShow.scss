@@ -1,29 +1,27 @@
-@import '../../abstracts/base';
-
+@import "../../abstracts/base";
 
 .slide-show {
-    margin-top: 20px;
-    overflow: hidden;
+  margin-top: 20px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  @media (max-width: 767px) {
+    order: 2;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: nowrap;
     width: 100%;
-    position: relative;
+  }
+  &__slide {
+    flex: 0 0 20%;
+    height: auto;
     @media (max-width: 767px) {
-        order: 2;
+      flex: 0 0 100%;
     }
-    &__container {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-
-    }
-    &__slide {
-        flex: 0 0 20%;
-        height: auto;
-        @media (max-width: 767px) {
-        flex: 0 0 100%;
-    }
-}
-    &__img {
-        width: 100%;
-        height: 100%;
-    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
 }

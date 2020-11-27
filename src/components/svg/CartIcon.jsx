@@ -16,12 +16,7 @@ const CartIcon = () => {
           className="m8g_G"
           d="M281.6 3c35.7 10.7 56 47.6 45.2 83.3s-47.6 56-83.3 45.2c-35.7-10.7-56-47.6-45.2-83.3C209 13.1 245.9-7.2 281.6 3z"
         ></path>
-        <text
-          x="265"
-          y="69"
-          dy=".35em"
-          className="_1INsc rb-zeplin-selected"
-        >
+        <text x="265" y="69" dy=".35em" className="_1INsc rb-zeplin-selected">
           1
         </text>
         <path

@@ -1,14 +1,13 @@
-@import '../../abstracts/base';
-
+@import "../../abstracts/base";
 
 .quick-view {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(85, 85, 85, 0.75);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__body {
-        width: 50px;
-    }
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(85, 85, 85, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__body {
+    width: 50px;
+  }
 }

@@ -1,5 +1,5 @@
 @import "../../abstracts/reset";
-@import '../../abstracts/base';
+@import "../../abstracts/base";
 
 html {
   font-family: $text-font;
@@ -11,7 +11,7 @@ html {
 body {
   background: #ffffff;
   height: 100%;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 .wrapper {

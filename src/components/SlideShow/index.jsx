@@ -1,3 +1,3 @@
-import SlideShow from './SlideShow';
+import SlideShow from "./SlideShow";
 
 export default SlideShow;
