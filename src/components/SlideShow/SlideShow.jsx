@@ -13,7 +13,7 @@ export default class SlideShow extends Component {
     };
   }
 
-  onFocus = () => {
+  /*   onFocus = () => {
     this.setState(({ onFocus }) => {
       return {
         onFocus: !onFocus,
@@ -27,7 +27,7 @@ export default class SlideShow extends Component {
         onFocus: false,
       };
     });
-  };
+  }; */
 
   render() {
     const { data } = this.props;

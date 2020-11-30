@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { HeadlineProduct } from "../Headline";
 import { Link } from "react-router-dom";
 import "./Product.scss";
-import QuickView from "../QuickView";
 
 class Products extends Component {
   constructor() {

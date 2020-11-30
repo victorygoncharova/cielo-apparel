@@ -121,12 +121,11 @@ const productData = [
     images: {
       path: product003,
       pathFullSize: product003full,
-      // color: 'Grey',
     },
 
     filters: {
       collection: ["All", "Sport Bras"],
-      // colors: ['Grey',],
+
       sizes: ["Small", "Medium", "Large"],
     },
     descr:
@@ -146,12 +145,10 @@ const productData = [
     images: {
       path: product004,
       pathFullSize: product004full,
-      // color: "Grey",
     },
 
     filters: {
       collection: ["All", "Sport Bras", "Best Sellers"],
-      // colors: ["Grey"],
       sizes: ["Small", "Medium", "Large"],
     },
     descr:
@@ -171,12 +168,10 @@ const productData = [
     images: {
       path: product005,
       pathFullSize: product005full,
-      // color: "Grey",
     },
 
     filters: {
       collection: ["All", "Leggings", "New Arrivals"],
-      // colors: ["Grey"],
       sizes: ["Small", "Medium", "Large"],
     },
     descr:
@@ -226,12 +221,10 @@ const productData = [
     images: {
       path: product007,
       pathFullSize: product007full,
-      // color: "Grey",
     },
 
     filters: {
       collection: ["All", "Leggings", "Best Sellers"],
-      // colors: ["Grey"],
       sizes: ["Small", "Medium", "Large"],
     },
 
@@ -363,12 +356,10 @@ const productData = [
     images: {
       path: product012,
       pathFullSize: product012full,
-      // color: 'Grey',
     },
 
     filters: {
       collection: ["All", "Shirts"],
-      // colors: ['Grey'],
       sizes: ["Small", "Medium", "Large"],
     },
     descr:
@@ -388,12 +379,10 @@ const productData = [
     images: {
       path: product013,
       pathFullSize: product013full,
-      // color: 'Grey',
     },
 
     filters: {
       collection: ["All", "Shorts", "New Arrivals"],
-      // colors: ['Grey'],
       sizes: ["Small", "Medium", "Large"],
     },
     descr:

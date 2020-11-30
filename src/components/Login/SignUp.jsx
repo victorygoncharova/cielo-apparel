@@ -7,9 +7,14 @@ const SignUp = () => {
     <div class="login__page">
       <Link to="./" className="exit"></Link>
       <h1 className="headline headline_login">Sign Up</h1>
-      <div className="login__link"> Already a member?</div>
+
+      <div className="login__link">
+        <span>Already a member?</span>
+        <Link to="/log-in">Log In</Link>
+      </div>
+
       <button className="login__btn login__btn_fb">
-        Sign up with Facebook
+        <span>Sign up with Facebook</span>
       </button>
       <button className="login__btn login__btn_g">Sign up with Google</button>
       <span className="login__or">or</span>

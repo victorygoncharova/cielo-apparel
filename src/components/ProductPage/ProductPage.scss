@@ -7,11 +7,19 @@
   &__row {
     padding: 0 25%;
     display: flex;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      padding: 0 15%;
+    }
   }
   &__left {
     width: 534px;
     padding-left: 34px;
     margin-right: 35px;
+    @media (max-width: 767px) {
+      padding-left: 0;
+      margin-right: 0;
+    }
   }
   &__img {
     width: 100%;
@@ -25,6 +33,9 @@
     padding-right: 46px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 767px) {
+      padding-top: 30px;
+    }
   }
   &__descr {
     margin-top: 28px;

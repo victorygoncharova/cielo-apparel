@@ -62,8 +62,7 @@ class Accordion extends Component {
                     data-filter={item.text}
                     onClick={this.clickHandler.bind(this, text)}
                   >
-                    {" "}
-                    {item.text}{" "}
+                    {item.text}
                   </li>
                 );
               })}
@@ -78,9 +77,11 @@ class Accordion extends Component {
                   backgroundColor: item.code,
                 };
                 return (
-                  <li key={item.id} className="filter__colors" style={color}>
-                    {/* <span className="filter__color" ></span> */}
-                  </li>
+                  <li
+                    key={item.id}
+                    className="filter__colors"
+                    style={color}
+                  ></li>
                 );
               })}
             </ul>

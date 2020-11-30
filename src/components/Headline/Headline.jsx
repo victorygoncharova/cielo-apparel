@@ -9,7 +9,6 @@ const HeadlineUpperCase = ({ text }) => {
 const HeadlineProduct = ({ text, url }) => {
   return (
     <>
-      {" "}
       <h3 className="product__headline">
         <a href={url} className="product__link">
           {text}
