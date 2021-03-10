@@ -21,7 +21,9 @@
     justify-content: flex-end;
     align-items: center;
     @media (max-width: 767px) {
+      justify-content: space-between;
       &.open .header__nav {
+        display: block;
         opacity: 1;
         visibility: visible;
         transform: scaleX(1);
@@ -91,6 +93,9 @@
   }
   &__nav {
     margin: 0 60px 0 auto;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &__list {
     display: flex;

@@ -16,7 +16,7 @@ export default class Main extends Component {
         className="columns__video"
         preload="auto"
         autoPlay={true}
-        loop="true"
+        loop={true}
         muted="muted"
       >
         <source src={homeColumnVideo} type="video/mp4" />

@@ -81,7 +81,6 @@ class Products extends Component {
   };
 
   createQuickView = (id) => {
-    console.log(id);
     this.setState(({ activeModal, showModal }) => {
       return {
         activeModal: id,
@@ -95,8 +94,6 @@ class Products extends Component {
   };
 
   productBody = (item, id) => {
-    const classes = "quick-view-button";
-    const activeId = id;
     return (
       <>
         <Link
@@ -105,22 +102,8 @@ class Products extends Component {
           href="/"
           className="product__img"
         >
-          <img className="product__pic" src={item.images.path} />
+          <img className="product__pic" src={item.images.path} alt="" />
         </Link>
-
-        <Link
-          to={`/shop/${item.id}`}
-          data-id={item.id}
-          className={
-            this.state.isHovered && this.state.hoverId === activeId
-              ? `${classes} active`
-              : classes
-          }
-          onClick={() => this.createQuickView(item.id)}
-        >
-          Quick View
-        </Link>
-
         <HeadlineProduct text={item.title} url="#" />
         <span
           data-id={item.id}
@@ -136,8 +119,6 @@ class Products extends Component {
 
   render() {
     const { data } = this.props;
-    const { isHovered, hoverId, showModal, activeModal } = this.state;
-
     return (
       <>
         <ul className="products">{this.createList(data)}</ul>

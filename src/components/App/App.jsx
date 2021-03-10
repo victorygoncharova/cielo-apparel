@@ -6,7 +6,6 @@ import Main from "../Main";
 import { footerListData, headerListData, productData } from "../../data";
 import { ShopPage, AboutPage, ContactPage } from "../Pages";
 import { SignUp, Login } from "../Login";
-
 import ProductPage from "../ProductPage";
 
 import "./App.scss";
@@ -31,8 +30,6 @@ export default class App extends Component {
   }
 
   render() {
-    const { productData } = this.state;
-
     return (
       <Router>
         <div className="wrapper">

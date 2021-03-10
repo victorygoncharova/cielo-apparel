@@ -12,23 +12,6 @@ export default class SlideShow extends Component {
       onFocus: false,
     };
   }
-
-  /*   onFocus = () => {
-    this.setState(({ onFocus }) => {
-      return {
-        onFocus: !onFocus,
-      };
-    });
-  };
-
-  offFocus = (e) => {
-    this.setState(({ onFocus }) => {
-      return {
-        onFocus: false,
-      };
-    });
-  }; */
-
   render() {
     const { data } = this.props;
     const { onFocus } = this.state;

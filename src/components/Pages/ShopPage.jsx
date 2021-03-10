@@ -10,7 +10,7 @@ export default class ShopPage extends Component {
   render() {
     const { data, clickFilter } = this.props;
     const header = <HeadlineUpperCase text="Shop" />;
-    const img = <img src={shopColumnImg} className="columns__img" />;
+    const img = <img src={shopColumnImg} className="columns__img" alt="" />;
 
     return (
       <>

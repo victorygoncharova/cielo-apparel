@@ -21,6 +21,18 @@ export default class Header extends Component {
         };
       });
     };
+
+    this.onClickMenuItem = ({ target }) => {
+      const isItem = target.closest(".header__item");
+
+      if (!isItem) return;
+
+      this.setState(({ isOpened }) => {
+        return {
+          isOpened: !isOpened,
+        };
+      });
+    };
   }
 
   render() {
@@ -36,7 +48,7 @@ export default class Header extends Component {
           <button className="header__burger" onClick={this.onToggleBurger}>
             <span></span>
           </button>
-          <nav className="header__nav">
+          <nav className="header__nav" onClick={this.onClickMenuItem}>
             <CreateList data={data} type={type} />
           </nav>
           <div className="user-nav">
